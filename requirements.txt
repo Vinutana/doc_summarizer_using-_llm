@@ -1,0 +1,15 @@
+# LLM API
+google-generativeai
+
+# Environment / config
+python-dotenv
+
+# Embeddings for optional evaluation
+sentence-transformers
+
+# Optional: compute cosine similarity
+scikit-learn
+numpy
+
+# Optional: if you want a simple UI
+streamlit
