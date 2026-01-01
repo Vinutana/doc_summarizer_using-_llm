@@ -172,6 +172,13 @@ scikit-learn
 This project is open for educational use.
 
 
+# LLM Project Demo
+
+### Streamlit App UI
+![Text](images/image1.png)
+
+### Model Results
+![Summarizer](images/image2.png)
 
 
 
