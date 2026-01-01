@@ -23,6 +23,7 @@ The goal of this project is to understand how to:
 
 ## 📂 Project Structure
 
+
 llm1/
 │── streamlit_app.py # Streamlit app for summarization
 │── manual_evaluation.py # Semantic similarity evaluation
@@ -32,8 +33,6 @@ llm1/
 │── .gitignore # Ignored files
 │── README.md # Project documentation
 
-yaml
-Copy code
 
 ---
 
@@ -85,13 +84,11 @@ pip install -r requirements.txt
 Create a .env file in the project root:
 
 ini
-Copy code
 GEMINI_API_KEY=your_api_key_here
 ⚠️ Do NOT push .env to GitHub.
 
 ▶️ Run the Streamlit App
 bash
-Copy code
 streamlit run streamlit_app.py
 Open the browser link shown in the terminal
 
@@ -116,8 +113,6 @@ Instruction-following behavior
 Semantic Similarity Evaluation
 The project includes a basic evaluation script using sentence embeddings:
 
-python
-Copy code
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -127,6 +122,9 @@ def semantic_score(reference, generated):
     ref_emb = model.encode([reference])
     gen_emb = model.encode([generated])
     return cosine_similarity(ref_emb, gen_emb)[0][0]
+
+
+
 This provides a rough similarity score (0–1) between:
 
 A reference summary
@@ -159,15 +157,12 @@ It does not claim state-of-the-art performance or production readiness.
 
 📣 Tech Stack
 Python
-
 Google Gemini API
-
 Streamlit
-
 Sentence Transformers
-
 scikit-learn
 
 📄 License
 This project is open for educational use.
+
 
