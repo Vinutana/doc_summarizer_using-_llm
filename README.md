@@ -25,13 +25,14 @@ The goal of this project is to understand how to:
 
 
 llm1/
-│── streamlit_app.py # Streamlit app for summarization
-│── manual_evaluation.py # Semantic similarity evaluation
-│── config.py # Loads Gemini API key
-│── requirements.txt # Project dependencies
-│── .env # API key (not pushed to GitHub)
-│── .gitignore # Ignored files
-│── README.md # Project documentation
+├── streamlit_app.py        # Streamlit app for summarization
+├── manual_evaluation.py    # Semantic similarity evaluation
+├── config.py               # Loads Gemini API key
+├── requirements.txt        # Project dependencies
+├── .env                    # API key (not pushed to GitHub)
+├── .gitignore              # Ignored files
+└── README.md               # Project documentation
+
 
 
 ---
@@ -164,5 +165,6 @@ scikit-learn
 
 📄 License
 This project is open for educational use.
+
 
 
