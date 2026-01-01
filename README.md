@@ -24,6 +24,7 @@ The goal of this project is to understand how to:
 ## 📂 Project Structure
 
 
+```text
 llm1/
 ├── streamlit_app.py        # Streamlit app for summarization
 ├── manual_evaluation.py    # Semantic similarity evaluation
@@ -32,6 +33,8 @@ llm1/
 ├── .env                    # API key (not pushed to GitHub)
 ├── .gitignore              # Ignored files
 └── README.md               # Project documentation
+```
+
 
 
 
@@ -166,9 +169,7 @@ scikit-learn
 📄 License
 This project is open for educational use.
 
-<img width="1311" height="665" alt="image" src="https://github.com/user-attachments/assets/7d739449-b5e2-47c3-9f05-dc00a2a79dd9" />
 
-<img width="1265" height="428" alt="image" src="https://github.com/user-attachments/assets/fbb84d02-3a65-4990-8187-61137df59a52" />
 
 
 
