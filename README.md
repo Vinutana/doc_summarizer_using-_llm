@@ -59,18 +59,18 @@ This project uses a **Large Language Model (Gemini)** to:
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
-
+1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/LLM_Summarizer_Gemini.git
 cd llm1
-2. Create a Virtual Environment
+
+ 2. Create a Virtual Environment
 bash
 Copy code
 python -m venv .venv
+
 3. Activate the Virtual Environment
 Windows (PowerShell):
-
 powershell
 Copy code
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
@@ -80,10 +80,12 @@ If PowerShell is restricted, use:
 powershell
 Copy code
 .\.venv\Scripts\activate.bat
+
 4. Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
+
 5. Set Up Gemini API Key
 Create a .env file in the project root:
 
@@ -102,7 +104,7 @@ Click Summarize
 
 View the generated summary
 
-🧪 Manual & Semantic Evaluation
+### 🧪 Manual & Semantic Evaluation
 LLM outputs are evaluated using qualitative checks and semantic similarity.
 
 What is evaluated:
@@ -168,6 +170,7 @@ scikit-learn
 
 📄 License
 This project is open for educational use.
+
 
 
 
