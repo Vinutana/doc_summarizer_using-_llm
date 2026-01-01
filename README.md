@@ -61,10 +61,10 @@ This project uses a **Large Language Model (Gemini)** to:
 # LLM Project Demo
 
 ### Streamlit App UI
-![App UI](images/image1.png)
+![App UI](images/image1.PNG)
 
 ### Model Results
-![Summarizer](images/image2.png)
+![Summarizer](images/image2.PNG)
 
 # ⚙️ Setup Instructions
 
@@ -178,6 +178,7 @@ scikit-learn
 📄 License
 
 Open for educational use.
+
 
 
 
