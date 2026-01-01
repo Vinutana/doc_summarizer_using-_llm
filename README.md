@@ -57,45 +57,53 @@ This project uses a **Large Language Model (Gemini)** to:
 
 ---
 
-## ⚙️ Setup Instructions
 
-1. Clone the Repository
+# LLM Project Demo
+
+### Streamlit App UI
+![App UI](images/image1.png)
+
+### Model Results
+![Summarizer](images/image2.png)
+
+# ⚙️ Setup Instructions
+
+## 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/LLM_Summarizer_Gemini.git
 cd llm1
 
- 2. Create a Virtual Environment
-bash
-Copy code
+2. Create a Virtual Environment
 python -m venv .venv
 
 3. Activate the Virtual Environment
+
 Windows (PowerShell):
-powershell
-Copy code
+
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 .\.venv\Scripts\Activate.ps1
+
+
 If PowerShell is restricted, use:
 
-powershell
-Copy code
 .\.venv\Scripts\activate.bat
 
 4. Install Dependencies
-bash
-Copy code
 pip install -r requirements.txt
 
 5. Set Up Gemini API Key
+
 Create a .env file in the project root:
 
-ini
 GEMINI_API_KEY=your_api_key_here
+
+
 ⚠️ Do NOT push .env to GitHub.
 
 ▶️ Run the Streamlit App
-bash
 streamlit run streamlit_app.py
+
+
 Open the browser link shown in the terminal
 
 Paste text into the input box
@@ -104,10 +112,12 @@ Click Summarize
 
 View the generated summary
 
-### 🧪 Manual & Semantic Evaluation
+🧪 Manual & Semantic Evaluation
+
 LLM outputs are evaluated using qualitative checks and semantic similarity.
 
 What is evaluated:
+
 Accuracy of the summary
 
 Preservation of key ideas
@@ -117,7 +127,6 @@ Conciseness
 Instruction-following behavior
 
 Semantic Similarity Evaluation
-The project includes a basic evaluation script using sentence embeddings:
 
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -130,16 +139,10 @@ def semantic_score(reference, generated):
     return cosine_similarity(ref_emb, gen_emb)[0][0]
 
 
-
-This provides a rough similarity score (0–1) between:
-
-A reference summary
-
-The LLM-generated output
-
-Note: This metric is used as a supporting signal, not as a definitive evaluation.
+Provides a rough similarity score (0–1) between a reference summary and the LLM-generated output. Used as a supporting signal, not definitive.
 
 📌 Key Learnings
+
 Prompt clarity significantly affects output quality
 
 LLMs can be useful even without retrieval or fine-tuning
@@ -149,6 +152,7 @@ Evaluation of LLMs is largely qualitative
 Simple, focused projects are better than over-engineered ones
 
 🔮 Future Improvements
+
 Improve prompt design
 
 Add batch evaluation
@@ -157,32 +161,23 @@ Add UI-based comparison of outputs
 
 Explore different Gemini models
 
-⚠️ Disclaimer
-This project is for learning and demonstration purposes.
-It does not claim state-of-the-art performance or production readiness.
+⚠️ This project is for learning/demo purposes only.
 
 📣 Tech Stack
+
 Python
+
 Google Gemini API
+
 Streamlit
+
 Sentence Transformers
+
 scikit-learn
 
 📄 License
-This project is open for educational use.
 
-
-# LLM Project Demo
-
-### Streamlit App UI
-![Text](images/image1.png)
-
-### Model Results
-![Summarizer](images/image2.png)
-
-
-
-
+Open for educational use.
 
 
 
