@@ -69,40 +69,30 @@ This project uses a **Large Language Model (Gemini)** to:
 # ⚙️ Setup Instructions
 
 ## 1. Clone the Repository
-```bash
+''' bash
 git clone https://github.com/your-username/LLM_Summarizer_Gemini.git
-cd llm1
+cd llm1 '''
 
-2. Create a Virtual Environment
+## 2. Create a Virtual Environment
 python -m venv .venv
 
-3. Activate the Virtual Environment
-
-Windows (PowerShell):
-
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-.\.venv\Scripts\Activate.ps1
-
-
-If PowerShell is restricted, use:
-
+## 3. Activate the Virtual Environment
 .\.venv\Scripts\activate.bat
 
-4. Install Dependencies
+## 4. Install Dependencies
 pip install -r requirements.txt
 
-5. Set Up Gemini API Key
+## 5. Set Up Gemini API Key
 
 Create a .env file in the project root:
 
 GEMINI_API_KEY=your_api_key_here
 
-
+#### Note:
 ⚠️ Do NOT push .env to GitHub.
 
 ▶️ Run the Streamlit App
 streamlit run streamlit_app.py
-
 
 Open the browser link shown in the terminal
 
@@ -112,21 +102,17 @@ Click Summarize
 
 View the generated summary
 
-🧪 Manual & Semantic Evaluation
+## 🧪 Manual & Semantic Evaluation
 
 LLM outputs are evaluated using qualitative checks and semantic similarity.
 
 What is evaluated:
 
-Accuracy of the summary
-
-Preservation of key ideas
-
-Conciseness
-
-Instruction-following behavior
-
-Semantic Similarity Evaluation
+1. Accuracy of the summary
+2. Preservation of key ideas
+3. Conciseness
+4. Instruction-following behavior
+5. Semantic Similarity Evaluation
 
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -141,43 +127,34 @@ def semantic_score(reference, generated):
 
 Provides a rough similarity score (0–1) between a reference summary and the LLM-generated output. Used as a supporting signal, not definitive.
 
-📌 Key Learnings
+## 📌 Key Learnings
 
-Prompt clarity significantly affects output quality
+1. Prompt clarity significantly affects output quality
+2. LLMs can be useful even without retrieval or fine-tuning
+3. Evaluation of LLMs is largely qualitative
+4. Simple, focused projects are better than over-engineered ones
 
-LLMs can be useful even without retrieval or fine-tuning
+## 🔮 Future Improvements
 
-Evaluation of LLMs is largely qualitative
-
-Simple, focused projects are better than over-engineered ones
-
-🔮 Future Improvements
-
-Improve prompt design
-
-Add batch evaluation
-
-Add UI-based comparison of outputs
-
-Explore different Gemini models
+1. Improve prompt design
+2. Add batch evaluation
+3. Add UI-based comparison of outputs
+4. Explore different Gemini models
 
 ⚠️ This project is for learning/demo purposes only.
 
-📣 Tech Stack
+## 📣 Tech Stack
 
 Python
-
 Google Gemini API
-
 Streamlit
-
 Sentence Transformers
-
 scikit-learn
 
 📄 License
 
 Open for educational use.
+
 
 
 
